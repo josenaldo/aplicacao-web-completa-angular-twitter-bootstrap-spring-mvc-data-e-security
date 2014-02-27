@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context>
-    <WatchedResource>WEB-INF/web.xml</WatchedResource>
- 
+	<WatchedResource>WEB-INF/web.xml</WatchedResource>
+
     <Resource
             factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
             name="jdbc/tomcatDataSource"
@@ -15,12 +15,12 @@
             username="root"
             password="root"
             driverClassName="com.mysql.jdbc.Driver"
-            validationQuery="SELECT 'OK'"
+            validationQuery="Select 1"
             testWhileIdle="true"
             testOnBorrow="true"
             numTestsPerEvictionRun="5"
             timeBetweenEvictionRunsMillis="30000"
             minEvictableIdleTimeMillis="60000"
-            url="jdbc:mysql://localhost:3306/uaiContacts" />
+            url="jdbc:mysql://localhost:3306/uaicontacts" />
  
 </Context>

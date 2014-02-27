@@ -14,17 +14,17 @@
     <body>
         <div class="container">
             <tiles:insertAttribute name="header" />
- 
+
             <tiles:insertAttribute name="body" />
         </div>
- 
+
         <!--[if IE]>
             <script src="<c:url value='/resources/js/bootstrap.min.ie.js' />"></script>
         <![endif]-->
         <!--[if !IE]><!-->
             <script src="<c:url value='/resources/js/bootstrap.min.js' />"></script>
         <!--<![endif]-->
- 
+
         <tiles:insertAttribute name="footer" />
     </body>
 </html>
