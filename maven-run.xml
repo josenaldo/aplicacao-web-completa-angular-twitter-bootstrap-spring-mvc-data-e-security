@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<project name="mvn-launcher" basedir="." default="mvn-clean-install-tomcat7-run">
+
+	<property name="maven.executable" value="mvn.bat" />
+
+	<target name="mvn-package">
+		<echo>Executing mvn package</echo>
+		<exec executable="${maven.executable}" failonerror="true">
+			<arg value="package" />
+			<arg value="-Dmaven.test.skip=true" />
+		</exec>
+	</target>
+
+	<target name="mvn-test">
+		<echo>Executing mvn test</echo>
+		<exec executable="${maven.executable}" failonerror="true">
+			<arg value="test" />
+		</exec>
+	</target>
+
+	<target name="mvn-clean">
+		<echo>Executing mvn clean</echo>
+		<exec executable="${maven.executable}" failonerror="true">
+			<arg value="clean" />
+			<arg value="-Dmaven.test.skip=true" />
+		</exec>
+	</target>
+
+	<target name="mvn-install">
+		<echo>Executing mvn install</echo>
+		<exec executable="${maven.executable}" failonerror="true">
+			<arg value="install" />
+			<arg value="-Dmaven.test.skip=true" />
+		</exec>
+	</target>
+
+	<target name="mvn-clean-install">
+		<echo>Executing mvn clean install</echo>
+		<exec executable="${maven.executable}" failonerror="true">
+			<arg value="clean" />
+			<arg value="install" />
+			<arg value="-Dmaven.test.skip=true" />
+		</exec>
+	</target>
+
+	<target name="mvn-clean-package">
+		<exec executable="${maven.executable}" failonerror="true">
+			<arg value="clean" />
+			<arg value="test" />
+			<arg value="-Dmaven.test.skip=true" />
+		</exec>
+	</target>
+
+	<target name="mvn-sources">
+		<echo>Executing mvn dependency:sources</echo>
+		<exec executable="${maven.executable}" failonerror="true">
+			<arg value="dependency:sources" />
+			<arg value="-Dmaven.test.skip=true" />
+		</exec>
+	</target>
+
+	<target name="mvn-javadoc">
+		<echo>Executing dependency:resolve -Dclassifier=javadoc</echo>
+		<exec executable="${maven.executable}" failonerror="true">
+			<arg value="dependency:resolve" />
+			<arg value="-Dclassifier=javadoc" />
+			<arg value="-Dmaven.test.skip=true" />
+		</exec>
+	</target>
+
+	<target name="mvn-pmd">
+		<echo>Executing mvn dependency:sources</echo>
+		<exec executable="${maven.executable}" failonerror="true">
+			<arg value="pmd:pmd" />
+			<arg value="pmd:cpd" />
+		</exec>
+	</target>
+
+	<target name="mvn-findbugs">
+		<echo>Executing mvn dependency:sources</echo>
+		<exec executable="${maven.executable}" failonerror="true">
+			<arg value="findbugs:findbugs" />
+		</exec>
+	</target>
+
+	<target name="mvn-site">
+		<echo>Executing mvn dependency:sources</echo>
+		<exec executable="${maven.executable}" failonerror="true">
+			<arg value="site" />
+		</exec>
+	</target>
+
+	<target name="mvn-tomcat7-run">
+		<echo>Executing mvn tomcat7:run</echo>
+		<exec executable="${maven.executable}" failonerror="true">
+			<arg value="tomcat7:run" />
+		</exec>
+	</target>
+
+	<target name="mvn-clean-install-tomcat7-run">
+		<echo>Executing mvn clean install tomcat7:run</echo>
+		<exec executable="${maven.executable}" failonerror="true">
+			<arg value="clean" />
+			<arg value="install" />
+			<arg value="tomcat7:run" />
+		</exec>
+	</target>
+
+
+	<target name="mvn-sources-and-javadoc" depends="mvn-sources, mvn-javadoc" />
+</project>
