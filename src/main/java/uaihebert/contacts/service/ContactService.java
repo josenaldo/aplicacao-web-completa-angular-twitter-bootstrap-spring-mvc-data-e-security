@@ -1,4 +1,4 @@
-package uaiContacts.service;
+package uaihebert.contacts.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -8,9 +8,9 @@ import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import uaiContacts.model.Contact;
-import uaiContacts.repository.ContactRepository;
-import uaiContacts.vo.ContactListVO;
+import uaihebert.contacts.model.Contact;
+import uaihebert.contacts.repository.ContactRepository;
+import uaihebert.contacts.vo.ContactListVO;
 
 @Service
 @Transactional

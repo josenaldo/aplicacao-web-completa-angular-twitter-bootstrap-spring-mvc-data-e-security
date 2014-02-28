@@ -1,4 +1,4 @@
-package uaiContacts.controller;
+package uaihebert.contacts.controller;
 
 import java.util.Locale;
 
@@ -18,9 +18,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import uaiContacts.model.Contact;
-import uaiContacts.service.ContactService;
-import uaiContacts.vo.ContactListVO;
+import uaihebert.contacts.model.Contact;
+import uaihebert.contacts.service.ContactService;
+import uaihebert.contacts.vo.ContactListVO;
 
 @Controller
 @RequestMapping(value = "/protected/contacts")

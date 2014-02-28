@@ -8,10 +8,10 @@
     <!-- Basic Configurations -->
     <context:annotation-config/>
 
-    <context:component-scan base-package="uaiContacts.model"/>
-    <context:component-scan base-package="uaiContacts.repository"/>
-    <context:component-scan base-package="uaiContacts.service"/>
-    <context:component-scan base-package="uaiContacts.controller"/>
+    <context:component-scan base-package="uaihebert.contacts.model"/>
+    <context:component-scan base-package="uaihebert.contacts.repository"/>
+    <context:component-scan base-package="uaihebert.contacts.service"/>
+    <context:component-scan base-package="uaihebert.contacts.controller"/>
 
     <!-- SpringMVC -->
     <import resource="spring-mvc.xml"/>

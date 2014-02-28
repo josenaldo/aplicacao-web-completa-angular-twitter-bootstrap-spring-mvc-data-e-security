@@ -1,4 +1,4 @@
-package uaiContacts.model;
+package uaihebert.contacts.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

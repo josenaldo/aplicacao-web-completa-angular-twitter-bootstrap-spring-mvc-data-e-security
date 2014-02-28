@@ -1,8 +1,8 @@
-package uaiContacts.vo;
+package uaihebert.contacts.vo;
 
 import java.util.List;
 
-import uaiContacts.model.Contact;
+import uaihebert.contacts.model.Contact;
 
 public class ContactListVO {
 	private int pagesCount;

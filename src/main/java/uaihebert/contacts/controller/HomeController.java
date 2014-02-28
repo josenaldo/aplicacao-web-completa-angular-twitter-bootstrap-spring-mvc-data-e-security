@@ -1,4 +1,4 @@
-package uaiContacts.controller;
+package uaihebert.contacts.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

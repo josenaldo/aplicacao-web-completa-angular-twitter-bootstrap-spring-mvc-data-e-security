@@ -1,4 +1,4 @@
-package uaiContacts.interceptor;
+package uaihebert.contacts.interceptor;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -9,8 +9,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
-import uaiContacts.model.User;
-import uaiContacts.service.UserService;
+import uaihebert.contacts.model.User;
+import uaihebert.contacts.service.UserService;
 
 public class LoginInterceptor extends HandlerInterceptorAdapter {
 

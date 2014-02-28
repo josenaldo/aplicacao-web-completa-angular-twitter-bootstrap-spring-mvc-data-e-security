@@ -28,7 +28,7 @@
     </bean>
 
     <!-- Spring Data -->
-    <jpa:repositories base-package="uaiContacts.repository"
+    <jpa:repositories base-package="uaihebert.contacts.repository"
                       entity-manager-factory-ref="entityManagerFactory"
                       transaction-manager-ref="transactionManager"/>
 </beans>
